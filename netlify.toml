@@ -1,0 +1,12 @@
+[build]
+  command = "pnpm build"
+  publish = "apps/puredown/dist"
+
+[dev]
+  command = "pnpm dev"
+  port = 5173
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

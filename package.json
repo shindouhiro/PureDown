@@ -13,5 +13,8 @@
     "tauri:dev": "pnpm --filter puredown tauri:dev",
     "tauri:build": "pnpm --filter puredown tauri:build",
     "android:dev": "pnpm --filter puredown android:dev"
+  },
+  "devDependencies": {
+    "netlify-cli": "^26.0.1"
   }
 }

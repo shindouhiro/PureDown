@@ -66,3 +66,6 @@ target/
 coverage/
 *.lcov
 
+
+# Local Netlify folder
+.netlify
