@@ -1,0 +1,34 @@
+{
+  "$schema": "./gen/schemas/desktop-schema.json",
+  "productName": "PureDown",
+  "version": "0.0.0",
+  "identifier": "com.puredown.app",
+  "build": {
+    "beforeDevCommand": "pnpm dev",
+    "beforeBuildCommand": "pnpm build",
+    "devUrl": "http://localhost:5173",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "label": "main",
+        "title": "PureDown 高清图搜索器",
+        "width": 1280,
+        "height": 860,
+        "minWidth": 960,
+        "minHeight": 680
+      }
+    ],
+    "security": {
+      "capabilities": [
+        "default"
+      ],
+      "csp": "default-src 'self'; connect-src 'self' https: http:; img-src 'self' data: https: http: asset:; style-src 'self' 'unsafe-inline'"
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "puredown-workspace",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.33.0",
+  "scripts": {
+    "dev": "pnpm --filter puredown dev",
+    "build": "pnpm --filter puredown build",
+    "lint": "pnpm --filter puredown lint",
+    "test": "pnpm --filter puredown test",
+    "test:search": "pnpm --filter puredown test:search",
+    "tauri": "pnpm --filter puredown tauri",
+    "tauri:dev": "pnpm --filter puredown tauri:dev",
+    "tauri:build": "pnpm --filter puredown tauri:build",
+    "android:dev": "pnpm --filter puredown android:dev"
+  }
+}
